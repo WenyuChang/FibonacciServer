@@ -28,3 +28,9 @@ INFO 2016-07-15 16:05:02,115   fibonacci.handlers.basehttphandler - End Processi
 INFO 2016-07-15 16:05:52,726   fibonacci.handlers.basehttphandler - Got and starting to process request: /ffib
 ERROR 2016-07-15 16:05:52,726   fibonacci.handlers.basehttphandler - Got Exception When Processing Request. Error code is 404 and error message is Page Not Found
 INFO 2016-07-15 16:05:52,727   fibonacci.handlers.basehttphandler - End Processing Request...
+INFO 2016-07-15 16:15:26,587   fibonacci.handlers.basehttphandler - Got and starting to process request: /fib?n=5
+INFO 2016-07-15 16:15:26,587   fibonacci.handlers.basehttphandler - Got Fibonacci Query Request with N=5
+INFO 2016-07-15 16:15:26,587   fibonacci.handlers.basehttphandler - After Processing Fibonacci Query Request, and it takes 5.00679016113e-06 second(s) to generate fibonacci list.
+INFO 2016-07-15 16:15:26,587   fibonacci.handlers.basehttphandler - Start Processing Response...
+INFO 2016-07-15 16:15:26,587   fibonacci.handlers.basehttphandler - End Processing Response...It takes 0.000251054763794 second(s) to generate response.
+INFO 2016-07-15 16:15:26,588   fibonacci.handlers.basehttphandler - End Processing Request...
