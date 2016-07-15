@@ -73,3 +73,6 @@ datefmt=
 * URL: `http://127.0.0.1:8889/fib?n=-1` / Output: `Failed when processing request: Negative N...`
 * URL: `http://127.0.0.1:8889/fib` / Output: `Failed when processing request: N NOT Passed in...`
 * URL: `http://127.0.0.1:8889/ffib?n=3` / Output: `Failed when processing request: Page Not Found`
+
+## Unit Test Usage
+`python <download_path>/test/fib_unittest.py`
