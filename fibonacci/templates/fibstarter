@@ -1,1 +1,1 @@
-nohup python -m fibonacci.httpserver fibonacci $@ > fibonacci.out &
+python -m fibonacci.httpserver fibonacci $@
