@@ -56,7 +56,7 @@ args=(sys.stdout,)
 class=FileHandler
 level=DEBUG
 formatter=simpleFormatter
-args=('/Users/Wenyu/Desktop/fib.log', 'w')
+args=('fibonacci.log', 'w')
 
 [formatter_simpleFormatter]
 format=%(levelname)s %(asctime)s   %(name)s - %(message)s
@@ -64,7 +64,7 @@ datefmt=
 ```
 
 ## Logging
-Default logging path will be `<download_path>/FibonacciServer/fib.log`
+Default logging path will be `<download_path>/FibonacciServer/fibonacci.log`
 
 Here is a sample log file's content:
 ```
@@ -96,4 +96,4 @@ INFO 2016-07-15 16:03:46,099   fibonacci.handlers.basehttphandler - End Processi
 * URL: `http://127.0.0.1:8889/ffib?n=3` / Output: `Failed when processing request: Page Not Found`
 
 ## Unit Test Usage
-`python <download_path>/test/fib_unittest.py`
+`python <download_path>/FibonacciServer/test/fib_unittest.py`
