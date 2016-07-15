@@ -63,6 +63,27 @@ format=%(levelname)s %(asctime)s   %(name)s - %(message)s
 datefmt=
 ```
 
+## Logging
+Default logging path will be `<download_path>/FibonacciServer/fib.log`
+
+Here is a sample log file's content:
+```
+DEBUG 2016-07-15 16:02:48,800   __main__ - Fibonacci Server Host Address: 127.0.0.1
+DEBUG 2016-07-15 16:02:48,800   __main__ - Fibonacci Server Host Port: 8889
+INFO 2016-07-15 16:02:54,607   fibonacci.handlers.basehttphandler - Got and starting to process request: /fib?n=1
+INFO 2016-07-15 16:02:54,607   fibonacci.handlers.basehttphandler - Got Fibonacci Query Request with N=1
+INFO 2016-07-15 16:02:54,607   fibonacci.handlers.basehttphandler - After Processing Fibonacci Query Request, and it takes 0.4 second(s) to generate fibonacci list.
+INFO 2016-07-15 16:02:54,607   fibonacci.handlers.basehttphandler - Start Processing Response...
+INFO 2016-07-15 16:02:54,608   fibonacci.handlers.basehttphandler - End Processing Response...It takes 0.000747919082642 second(s) to generate response.
+INFO 2016-07-15 16:02:54,608   fibonacci.handlers.basehttphandler - End Processing Request...
+INFO 2016-07-15 16:03:46,098   fibonacci.handlers.basehttphandler - Got and starting to process request: /fib?n=2
+INFO 2016-07-15 16:03:46,098   fibonacci.handlers.basehttphandler - Got Fibonacci Query Request with N=2
+INFO 2016-07-15 16:03:46,098   fibonacci.handlers.basehttphandler - After Processing Fibonacci Query Request, and it takes 3.09944152832e-06 second(s) to generate fibonacci list.
+INFO 2016-07-15 16:03:46,098   fibonacci.handlers.basehttphandler - Start Processing Response...
+INFO 2016-07-15 16:03:46,099   fibonacci.handlers.basehttphandler - End Processing Response...It takes 0.000212907791138 second(s) to generate response.
+INFO 2016-07-15 16:03:46,099   fibonacci.handlers.basehttphandler - End Processing Request...
+```
+
 ## Positive Test Cases
 * URL: `http://127.0.0.1:8889/fib?n=1` / Output: `[0]`
 * URL: `http://127.0.0.1:8889/fib?n=2` / Output: `[0, 1]`
@@ -73,3 +94,6 @@ datefmt=
 * URL: `http://127.0.0.1:8889/fib?n=-1` / Output: `Failed when processing request: Negative N...`
 * URL: `http://127.0.0.1:8889/fib` / Output: `Failed when processing request: N NOT Passed in...`
 * URL: `http://127.0.0.1:8889/ffib?n=3` / Output: `Failed when processing request: Page Not Found`
+
+## Unit Test Usage
+`python <download_path>/test/fib_unittest.py`
