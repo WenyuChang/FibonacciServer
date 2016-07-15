@@ -56,7 +56,7 @@ args=(sys.stdout,)
 class=FileHandler
 level=DEBUG
 formatter=simpleFormatter
-args=('/Users/Wenyu/Desktop/fig.log', 'w')
+args=('/Users/Wenyu/Desktop/fib.log', 'w')
 
 [formatter_simpleFormatter]
 format=%(levelname)s %(asctime)s   %(name)s - %(message)s
