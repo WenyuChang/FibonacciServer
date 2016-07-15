@@ -13,3 +13,4 @@ fibonacci/utils/config.py
 fibonacci/utils/log.py
 fibonacci/utils/simple_http_server.py
 test/__init__.py
+test/fib_unittest.py
