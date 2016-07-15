@@ -56,9 +56,20 @@ args=(sys.stdout,)
 class=FileHandler
 level=DEBUG
 formatter=simpleFormatter
-args=('/Users/Wenyu/Desktop/fig.log', 'w')
+args=('/Users/Wenyu/Desktop/fib.log', 'w')
 
 [formatter_simpleFormatter]
 format=%(levelname)s %(asctime)s   %(name)s - %(message)s
 datefmt=
 ```
+
+## Positive Test Cases
+* URL: `http://127.0.0.1:8889/fib?n=1` / Output: `[0]`
+* URL: `http://127.0.0.1:8889/fib?n=2` / Output: `[0, 1]`
+* URL: `http://127.0.0.1:8889/fib?n=3` / Output: `[0, 1, 1]`
+* URL: `http://127.0.0.1:8889/fib?n=10` / Output: `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
+
+## Negative Test Cases
+* URL: `http://127.0.0.1:8889/fib?n=-1` / Output: `Failed when processing request: Negative N...`
+* URL: `http://127.0.0.1:8889/fib` / Output: `Failed when processing request: N NOT Passed in...`
+* URL: `http://127.0.0.1:8889/ffib?n=3` / Output: `Failed when processing request: Page Not Found`
