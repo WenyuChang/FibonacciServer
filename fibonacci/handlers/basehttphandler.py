@@ -26,7 +26,6 @@ class FibHttpHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         logger = logging.getLogger(__name__)
         logger.info("Got and starting to process request: %s" % self.path)
-        print self.path
         if self.path.startswith('favicon.ico') or self.path.startswith('/json'):
             # Ignore requests for favicon icon
             return
