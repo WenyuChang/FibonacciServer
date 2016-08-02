@@ -45,7 +45,7 @@ class FibHttpHandler(BaseHTTPRequestHandler):
                 start_time = time.time()
                 out = _query_fib(n)
                 end_time = time.time()
-                logger.info("After Processing Fibonacci Query Request, and it takes %s second(s) to generate fibonacci list." % (
+                logger.info("After Pr ocessing Fibonacci Query Request, and it takes %s second(s) to generate fibonacci list." % (
                 end_time - start_time))
 
                 logger.info("Start Processing Response...")
