@@ -6,7 +6,6 @@ from subprocess import call
 from setuptools.command.install import install
 from setuptools import setup, find_packages
 
-# PQ package information
 PACKAGE_NAME = 'Fibonacci Server'
 PACKAGE_VERSION = '0.9'
 PACKAGE_DESCRIPTION = 'Restful Service for Fibonacci Query'
@@ -15,7 +14,7 @@ PACKAGE_MAINTAINER_EMAIL = 'changewy_1987@hotmail.com'
 
 class Installer(install):
     """
-    Run the default setuptools install plus install correct bits in PQ home folder
+    Run the default setuptools install plus configuration
     """
 
     def _create_bin(self):
